@@ -1,6 +1,10 @@
 # Data
 /data/
 
+/mlartifacts/
+/dvc-storage/
+/mlruns/
+
 # Mac OS-specific storage files
 .DS_Store
 
