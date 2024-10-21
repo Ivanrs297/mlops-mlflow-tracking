@@ -13,11 +13,13 @@ MICAI 2024 Tutorial for MLOps for Medical Imaging Made Easy
 - Install the required libraries:
 
 ```bash
-pip install mlflow medmnist torch torchvision matplotlib
+pip install mlflow medmnist torch torchvision matplotlib seaborn
 ```
 
 
 ## MLFlow
+
+Create a folder `./data/raw/` within the root of the project.
 
 Run the following command in your terminal to start the MLFlow UI:
 
@@ -50,7 +52,7 @@ This will start an HTTP server on port 5000 (by default), exposing the model as 
 Example Command:
 
 ```bash
-mlflow models serve -m runs:/208ba84905d341e09932a54a74a82fee/PathMNIST_cnn_model --no-conda -p 5001
+mlflow models serve -m runs:/adca5b681fb54667a3b5e82114034130/PathMNIST_cnn_model --no-conda -p 5001
 ``` 
 
 ### Script: `serve_model.sh`
